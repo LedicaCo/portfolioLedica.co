@@ -21,13 +21,13 @@ const AboutMe =
           </div>
           <div className="about__text">
             <h2 className="aboutme__section"><span className="aboutme__icon"><img className="icon__sobre" src="./sobre.png" alt="" /></span> ABOUT ME </h2>
-            <p  className="about__paragraf">Hola mi nombre es Leonardo Diaz Castrillon, soy un desarrollador Full Stack (Jr) apasionado por crear experiencias web asombrosas. Con sólidos conocimientos en HTML, CSS, JavaScript y TypeScript puedo construir interfaces interactivas y atractivas para los usuarios. Además, tengo experiencia en el desarrollo de aplicaciones web utilizando tecnologías modernas como React, Axios y Redux.</p><br />
+            <p  className="about__paragraf">Hello my name is Leonardo Diaz Castrillon, I am a Full Stack (Jr) developer passionate about creating amazing web experiences. With solid knowledge in HTML, CSS, JavaScript and TypeScript I can build interactive and attractive interfaces for users. Also, I have experience developing web applications using modern technologies such as React, Axios and Redux</p><br />
             
-            <p  className="about__paragraf">Soy un entusiasta del trabajo en equipo y siempre estoy dispuesto a aprender y crecer como desarrollador. Me encanta enfrentar nuevos desafíos y buscar soluciones creativas a los problemas. También tengo experiencia utilizando Git para el control de versiones y colaboración en proyectos.</p><br />
+            <p  className="about__paragraf">I am a teamwork enthusiast and always willing to learn and grow as a developer. I love facing new challenges and looking for creative solutions to problems. I also have experience using Git for version control and collaboration on projects.</p><br />
             
-            <p  className="about__paragraf">Mi objetivo principal es contribuir al desarrollo de aplicaciones web eficientes y de alta calidad. Me apasiona mantenerme actualizado con las últimas tendencias y tecnologías en el mundo del desarrollo web. Estoy emocionado por formar parte de un equipo dinámico donde pueda aplicar mis habilidades y aprender de profesionales experimentados.</p><br />
+            <p  className="about__paragraf">My main objective is to contribute to the development of efficient and high-quality web applications. I am passionate about staying up to date with the latest trends and technologies in the world of web development. I am excited to be part of a dynamic team where I can apply my skills and learn from experienced professionals.</p><br />
             
-            <p  className="about__paragraf">Si estás buscando a alguien motivado, adaptable y con habilidades en TypeScript, estaré encantado de ser parte de tu equipo y contribuir al éxito de tus proyectos. ¡Estoy ansioso por sumergirme en nuevos desafíos y llevar las ideas a la vida!</p><br />            
+            <p  className="about__paragraf">If you are looking for someone who is motivated, adaptable and with TypeScript skills, I would be happy to be part of your team and contribute to the success of your projects. I'm looking forward to diving into new challenges and bringing ideas to life!</p><br />            
           </div>
         </div>
         <div className="about_-section2"></div>
