@@ -1,0 +1,258 @@
+/*-------------------------------PROFILE-----------------------------*/
+
+.profile__content {
+    width: 100%;
+    padding: 100px 10px 50px 50px;      
+    
+  }
+  
+  .profile {
+    color: ghostwhite;
+    margin-top: 2em;left: 0;
+    
+  }
+  
+  .profile__title {
+    color: ghostwhite;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: row;
+   
+  }
+  
+  .down__cv {
+    margin-left: 1em;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 0.4em 0.4em;
+    border-radius: 0.3em;
+    color: #fff;
+    background-color: #007FFF;
+    border: solid 0.1px;
+    border-color: currentColor;
+  }
+  
+  .down__cv:hover {
+    background-color:#006400 ;
+    transition: var(--transition);
+  }
+  
+  .prog {
+    font-size: 0.8em;
+    color: ghostwhite;
+    margin-top: 2rem;
+  }
+  
+  .languages {
+    display:inline-flex;
+    color: ghostwhite;
+    list-style: none;
+    font-size: 2em;
+    padding: 0;
+    gap: 0.5em;
+  
+  }
+  
+  .lang__code{
+    margin-top: 1em;
+  }
+  
+  .icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+  }
+  
+  .icon-container li {
+    flex-grow: 1;
+    margin-right: 1em;
+  }
+  
+  
+  
+  .text__icon{
+      font-size: 0.25em;
+  }
+  
+  
+  .info__profile {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+  }
+  
+  
+  .circle {
+    border-radius: 50%;
+    width: 200px;
+    border: solid 0.3em #fff;
+  }
+  
+  .bxs-file-doc {
+    color: ghostwhite;
+    font-size: 2em;
+    margin-top: 0.2em;
+  }
+  
+  .bxs-file-doc:hover {
+    color: aqua;
+  }
+  
+  
+  .lang {
+    color: ghostwhite;
+    margin-left: 30px;
+    margin-top: 1.5em;
+  }
+  
+  /*--------------------SOCIAL MEDIA------------------------------*/
+  
+  .social__media {
+    margin-top: 2em;
+    list-style: none;
+    text-decoration: none;
+    margin-bottom: 35px;
+  }
+  
+  .social__item {
+    display: inline-flex;
+    list-style: none;
+    text-decoration: none;
+    font-size: 2em;
+    margin-right: 0.5em;
+    justify-content: space-between;
+  }
+  
+  .github__link{
+    color: ghostwhite;
+  }
+  
+  .linkedin__link{
+    color: ghostwhite;
+  }
+  
+  .email__link{
+    color: ghostwhite;
+  }
+  
+  .whatsapp__link{
+    color: ghostwhite;
+  }
+  
+  .github:hover {
+    color: var(--github);
+    font-size: 1.1em;
+    transition: 300ms ease-in-out;
+  }
+  
+  .linkedin:hover {
+    color: var(--linkedin);
+    font-size: 1.1em;
+    transition: 300ms ease-in-out;
+  }
+  
+  .email:hover {
+    color: var(--email);
+    font-size: 1.1em;
+    transition: 300ms ease-in-out;
+  }
+  
+  .whatsapp:hover {
+    color: var(--whatsapp);
+    font-size: 1.1em;
+    transition: var(--transition);
+  }
+  
+  .bar__social {
+    margin-top: 1em;
+  }
+  /*----------------------------BANNER-----------------------------------*/
+  
+  .content__banner {
+    width: 100%;
+    background-image: url('/portfolio-ledica.png');  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover; 
+    background-position: center;
+    min-height: 100vh; 
+    display: flex;
+    justify-content: center; 
+  }
+  
+  @media (max-width: 576px) {
+      
+    .profile__content {
+        width: 100%;
+        padding: 100px 10px 50px 20px;   
+    }
+      
+    .profile {
+        font-size: small;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .circle {
+        border-radius: 50%;
+        width: 200px;
+        border: solid 0.3em #fff;
+    }
+        
+      .img__banner {
+          display: none;
+      }
+      
+      .down__cv {
+        margin-right: 0;
+        font-size: 0.6em;
+    }
+    
+    .languages {
+        display:inline-flex;
+        color: ghostwhite;
+        list-style: none;
+        font-size: 1.6em;
+        padding: 0;
+        gap: 0.5em;
+    
+    }
+    
+    .down__cv {
+        margin-left: 1em;
+        cursor: pointer;
+        font-size: 12px;
+        padding: 0.5em 0.5em;
+        border-radius: 0.3em;
+        color: #fff;
+        background-color: #007FFF;
+        border: solid 0.1px;
+        border-color: currentColor;
+    }
+    
+
+    
+    .profile {
+        color: ghostwhite;
+        margin-top: 2em;
+        font-size: 12px;
+        
+    }
+    
+    .profile__title {
+        color: ghostwhite;
+        margin-top: 1.5em;
+        margin-bottom: 1em;
+        display: flex;
+        flex-direction: row;
+        font-size: 12px;
+       
+    }        
+    
+  }
+  

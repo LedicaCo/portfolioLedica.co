@@ -1,0 +1,180 @@
+/*--------------------------------FOOTER--------------------------*/
+
+  
+  .logo__footer {
+    width: 200px;
+    margin-top: 15px;
+  }
+  
+  .email__footer {
+    text-decoration: none;
+    list-style: none;
+    color: orange;
+    display: flex;  
+  }
+  
+  .email__footer:hover {
+    color:#ff0084;
+  }
+  
+  .bx-envelope {
+    color: var(--white);
+    font-size: 1em;
+  }
+  
+  .bxl-github {
+    color: var(--white);
+    font-size: 1em;  
+  }
+  
+  .bxl-linkedin {
+    color: var(--white);
+    font-size: 1em;  
+  }
+  
+  .bxl-youtube {
+    color: var(--white);
+    font-size: 1em;  
+  }
+  
+  .bxl-whatsapp {
+    color: var(--white);
+    font-size: 1em;  
+  }
+  
+  .bx-user {
+    color: var(--disabled);
+    font-size: 1.2em;
+  }
+  
+  .bx-code-curly {
+    color: var(--disabled);
+    font-size: 1.2em;
+  }
+  
+  .bx-e {
+    color: var(--disabled);
+    font-size: 1.2em;
+  }
+  
+  .social__btn {
+    display: grid;
+  
+    
+  }
+  
+  .btn__content {
+    display: flex;
+    justify-content: left;
+    margin-top: 25px;
+  }
+  
+  .btn__content ul li {
+    display: inline-block;
+    margin: 0 5px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    
+  }
+  
+  .btn__content ul li a {
+    display: block;
+    padding: 0 10px;
+    background: #333;
+    color: #fff;
+    line-height: 40px;
+    font-size: 18px;
+    box-shadow: 0 3px 5px 0px rgba(0, 0, 0, .2);
+    transition: .2s;
+    
+  }
+  
+  .btn__content ul:hover a {
+    filter: blur(2px);
+  }
+  
+  .btn__content ul li a:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 5px 5px 0px rgba(0, 0, 0, .4);
+    filter: none;
+  }
+  
+  .btn__content ul li .github:hover{
+    background: var(--github);
+  }
+  
+  .btn__content ul li .linkedin:hover{
+    background: var(--linkedin);
+  }
+  
+  .btn__content ul li .youtube:hover{
+    background: var(--youtube);
+  }
+  
+  .btn__content ul li .email:hover{
+    background: var(--email);
+  }
+  
+  .btn__content ul li .whatsapp:hover{
+    background: var(--whatsapp);
+  }  
+    
+  .text__copyright {
+    color: ghostwhite;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 17px 30px;
+  
+  }
+  
+  .text__link {
+    color: bisque;
+    list-style: none;
+    text-decoration: none;
+  }
+  
+  .text__link:hover {
+    color: #ff0084;
+  }
+  
+  .site__map {
+    padding: 15px;
+    line-height: 1.5em;
+  }
+  
+  .site__map--title {
+    color: orange;
+  }
+  
+  .site__map--link {
+    list-style: none;
+  
+  }
+  
+  .site__map--item {
+    text-decoration: none;
+    color: #fff;
+    
+  }
+  
+  .site__map--item:hover {
+    color: orange;
+  }
+  
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    
+    .footer__content {        
+        width: 100%;
+    }
+    
+    .text__link{
+      margin: 0 auto;
+    }
+    
+
+  }
+  

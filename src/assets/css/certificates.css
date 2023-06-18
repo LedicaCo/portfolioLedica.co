@@ -1,0 +1,99 @@
+.box5 {
+    background-color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 30px;
+
+}
+
+.certificates__container {
+    width: 1024px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+    
+}
+
+.certificates__title {
+    color: ghostwhite;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 2em;
+    box-shadow: inset;
+    text-shadow: 1px 2px 4px black, 0 0 1em blue, 0 0 0.2em blue;
+    color: white;
+}
+
+.certificate__content {
+    border: 2px solid goldenrod;
+    padding: 10px;
+    border-radius: 0.5em;
+}
+
+.certificate__image {
+    width: 100%;        
+}
+
+.divider {
+    width: 100%;
+    border: 0.01px solid goldenrod;
+    margin-top: 10px;
+}
+
+.verify__content {
+    text-align: center;
+    padding: 15px 0;
+}
+
+.verify__cert {
+    color: ghostwhite;
+    text-decoration: none;
+}
+
+.verify__cert:hover{
+    color: pink;
+    
+}
+
+/*------------------------------------TABLETS----------------------------------*/
+
+/* Medium devices (tablets, less than 992px) */
+/* @media (max-width: 991.98px) { ... } */
+
+/*------------------------------------HORIZONTAL MOVILES----------------------------------*/
+
+/* Small devices (landscape phones, less than 768px) */
+/* @media (max-width: 767.98px) { ... } */
+
+/*------------------------------------VERTICAL MOVILES----------------------------------*/
+
+@media (max-width: 576px) {
+    .box5 {
+        width: 100%;
+
+    }
+    
+    .certificates__title {
+        color: ghostwhite;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-size: 1.5em;
+    }
+    
+    .certificates__container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
+    
+    .certificate__content {
+        padding: 10px;
+    }
+    
+    .certificate__image {
+        width: 100%;        
+    }
+    
+}
