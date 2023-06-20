@@ -2,7 +2,7 @@
 const Header = ({ toggleNavbar, navbarVisible }) => {
   return (
     <header className="header__content box1">
-      <img className="logo__navbar" src="/logo-horizontal-ledica.png" alt="" />
+      <img className="logo__navbar" src="./logo-horizontal-ledica.png" alt="" />
       <i className="bx bx-menu" onClick={toggleNavbar}></i>
       <nav className={`navbar ${navbarVisible ? "visible" : ""}`}>
         <ul className="nav__list">
