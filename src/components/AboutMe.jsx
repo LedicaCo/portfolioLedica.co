@@ -30,7 +30,7 @@ const AboutMe =
             <p  className="about__paragraf">If you are looking for someone who is motivated, adaptable and with TypeScript skills, I would be happy to be part of your team and contribute to the success of your projects. I'm looking forward to diving into new challenges and bringing ideas to life!</p><br />            
           </div>
         </div>
-        <div className="about_-section2"></div>
+        <div className="about__section2"></div>
       </div>
     </div>
   );
