@@ -69,7 +69,7 @@
     padding: 15px;
     text-align: center;
     position: absolute;
-    padding-top: 215px;
+    bottom: -215px;
 
 }
 
