@@ -75,12 +75,12 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
-                  <a className="email" href="" onClick={handleOpenExternalPage}>
+                  <a className="email" href="mailto:webdesign@ledica.co" onClick={handleOpenExternalPage}>
                     <i className="bx bx-envelope"></i>
                   </a>
                 </li>
                 <li>
-                  <a className="whatsapp" href="" onClick={handleOpenExternalPage}>
+                  <a className="whatsapp" href="https://api.whatsapp.com/send/?phone=573218947069&text&type=phone_number&app_absent=0" onClick={handleOpenExternalPage}>
                     <i className="bx bxl-whatsapp"></i>
                   </a>
                 </li>
