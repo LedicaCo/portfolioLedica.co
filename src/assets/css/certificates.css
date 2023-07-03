@@ -2,14 +2,18 @@
     background-color: rgba(0, 0, 0, 0.6);
     margin-bottom: 30px;
 
+
 }
 
 .certificates__container {
     width: 1024px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 1em;
+    margin-bottom: 30px;
+    
+
     
 }
 

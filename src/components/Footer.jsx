@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <>
-      <div className="main__content--footer box8">
+      <div className="main__content--footer box8" id="Footer">
         <div className="footer__content">
           <div className="contacInfo f--box-1">
           <h3 className="site__map--title">Contact information</h3>
@@ -31,7 +31,7 @@ const Footer = () => {
                 </a>
               </li>
               <li className="site__map--link">
-                <a className="site__map--item" href="#MyCertifications">
+                <a className="site__map--item" href="#Certificates">
                   Certificates
                 </a>
               </li>

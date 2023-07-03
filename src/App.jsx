@@ -6,6 +6,8 @@ import './assets/css/layout.css';
 import './assets/css/footer.css';
 import "./assets/css/about-me.css";
 import './assets/css/certificates.css';
+import './assets/css/MyWorks.css';
+import './assets/css/ContacMe.css';
 import Header from './components/Header';
 import Profile from './components/Profile'
 import AboutMe from './components/AboutMe'
