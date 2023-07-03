@@ -105,7 +105,7 @@ const ContacMe = () => {
             </div>
             <div className="column-2">
               <span>
-                By the way i use <a href="">Whatsapp</a> and have profiles at
+                By the way i use <a href="https://api.whatsapp.com/send/?phone=573218947069&text&type=phone_number&app_absent=0">Whatsapp</a> and have profiles at
                 social networks like
               </span>
             </div>
@@ -136,7 +136,7 @@ const ContacMe = () => {
                 </a>
               </li>
               <li>
-                <a className="email" href="" onClick={handleOpenExternalPage}>
+                <a className="email" href="mailto:webdesign@ledica.co" onClick={handleOpenExternalPage}>
                   <i className="bx bx-envelope"></i>
                 </a>
               </li>

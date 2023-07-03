@@ -55,9 +55,9 @@ const Profile = () => {
             <ul>
               <li><a className="github" href="https://github.com/LedicaCo/" onClick={handleOpenExternalPage}><i className='bx bxl-github'></i></a></li>
               <li><a className="linkedin" href="https://www.linkedin.com/in/leonardo-diaz-castrillon-a226351a8" onClick={handleOpenExternalPage}><i className='bx bxl-linkedin'></i></a></li>
-              <li><a className="youtube" href="" onClick={handleOpenExternalPage}><i className='bx bxl-youtube'></i></a></li>
-              <li><a className="email" href="" onClick={handleOpenExternalPage}><i className='bx bx-envelope'></i></a></li>
-              <li><a className="whtsapp" href="" onClick={handleOpenExternalPage}><i className='bx bxl-whatsapp'></i></a></li>
+              <li><a className="youtube" href="#" onClick={handleOpenExternalPage}><i className='bx bxl-youtube'></i></a></li>
+              <li><a className="email" href="mailto:webdesign@ledica.co" onClick={handleOpenExternalPage}><i className='bx bx-envelope'></i></a></li>
+              <li><a className="whtsapp" href="https://api.whatsapp.com/send/?phone=573218947069&text&type=phone_number&app_absent=0" onClick={handleOpenExternalPage}><i className='bx bxl-whatsapp'></i></a></li>
             </ul>
           </div>
         </div>
