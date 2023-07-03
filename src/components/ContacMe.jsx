@@ -1,4 +1,22 @@
+import { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+
+
+
 const ContacMe = () => {
+  
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_v3atwb3', 'template_ngy7evm', form.current, 'k6hYwhsTXaf8n0g14')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
   
   const handleOpenExternalPage = (event) => {
     event.preventDefault();
@@ -105,7 +123,7 @@ const ContacMe = () => {
           </div>
         </div>
         <div className="form__container">
-          <form className="form" action="">
+          <form className="form" ref={form} onSubmit={sendEmail}>
           <h2 className="form__title">Contact form</h2>
             <div className="form__section">
               <label className="form__label" htmlFor="">
@@ -114,7 +132,7 @@ const ContacMe = () => {
               <input 
                 className="form__input"
                 id=""
-                type="text" required placeholder="Write the name of your company"               
+                type="text" name="company" required placeholder="Write the name of your company"               
               />
             </div>
             <div className="form__section">
@@ -123,8 +141,8 @@ const ContacMe = () => {
               </label>
               <input
                 className="form__input"
-                id="password"
-                type="text" required placeholder="Write your first and last name"
+                id=""
+                type="text" name="user_name" required placeholder="Write your first and last name"
               />
             </div>
             <div className="form__section">
@@ -133,8 +151,8 @@ const ContacMe = () => {
               </label>
               <input
                 className="form__input"
-                id="password"
-                type="text" required placeholder="Write your email"
+                id=""
+                type="email" name="email" required placeholder="Write your email"
               />
             </div>
             <div className="form__section">
@@ -143,17 +161,17 @@ const ContacMe = () => {
               </label>
               <input
                 className="form__input"
-                id="password"
-                type="text" required placeholder="Write your contact number or mobile"
+                id=""
+                type="phone" name="user_phone" required placeholder="Write your contact number or mobile"
               />
             </div>
             <div className="form__section">
               <label className="form__label" htmlFor="">
               Message
               </label>
-              <textarea className="form__text-area" name="" id="" cols="30" rows="8" placeholder="Write your message"></textarea>
+              <textarea className="form__text-area" name="message" id="" cols="30" rows="8" placeholder="Write your message"></textarea>
             </div>
-            <button className="btn__submit"><span>Send message</span></button>
+            <button className="btn__submit" type="submit" value="send"><span>Send message</span></button>
           </form>
         </div>
       </div>
