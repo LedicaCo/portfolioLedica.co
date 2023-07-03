@@ -1,4 +1,9 @@
 const ContacMe = () => {
+  
+  const handleOpenExternalPage = (event) => {
+    event.preventDefault();
+    window.open(event.target.href, '_blank');
+  };
   return (
     <div className="contactMe box7" id="ContacMe">
       <div className="contacme__title">
@@ -72,27 +77,27 @@ const ContacMe = () => {
           <div className="btn__content form__btn">
             <ul>
               <li>
-                <a className="github" href="">
+                <a className="github" href="https://github.com/LedicaCo/" onClick={handleOpenExternalPage}>
                   <i className="bx bxl-github"></i>
                 </a>
               </li>
               <li>
-                <a className="linkedin" href="">
+                <a className="linkedin" href="https://www.linkedin.com/in/leonardo-diaz-castrillon-a226351a8" onClick={handleOpenExternalPage}>
                   <i className="bx bxl-linkedin"></i>
                 </a>
               </li>
               <li>
-                <a className="youtube" href="">
+                <a className="youtube" href="" onClick={handleOpenExternalPage}>
                   <i className="bx bxl-youtube"></i>
                 </a>
               </li>
               <li>
-                <a className="email" href="">
+                <a className="email" href="" onClick={handleOpenExternalPage}>
                   <i className="bx bx-envelope"></i>
                 </a>
               </li>
               <li>
-                <a className="whatsapp" href="">
+                <a className="whatsapp" href="" onClick={handleOpenExternalPage}>
                   <i className="bx bxl-whatsapp"></i>
                 </a>
               </li>
@@ -101,7 +106,7 @@ const ContacMe = () => {
         </div>
         <div className="form__container">
           <form className="form" action="">
-          <h2 className="form__title">Form Contac</h2>
+          <h2 className="form__title">Contact form</h2>
             <div className="form__section">
               <label className="form__label" htmlFor="">
               Company

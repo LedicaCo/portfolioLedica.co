@@ -1,4 +1,10 @@
 const Profile = () => {
+  
+  const handleOpenExternalPage = (event) => {
+    event.preventDefault();
+    window.open(event.target.href, '_blank');
+  };
+  
   return (
     <>
         <div className="profile__content box2">
@@ -47,11 +53,11 @@ const Profile = () => {
           <span className="prog">Social networks</span>
           <div className="btn__content btn__profile">
             <ul>
-              <li><a className="github" href=""><i className='bx bxl-github'></i></a></li>
-              <li><a className="linkedin" href=""><i className='bx bxl-linkedin'></i></a></li>
-              <li><a className="youtube" href=""><i className='bx bxl-youtube'></i></a></li>
-              <li><a className="email" href=""><i className='bx bx-envelope'></i></a></li>
-              <li><a className="whtsapp" href=""><i className='bx bxl-whatsapp'></i></a></li>
+              <li><a className="github" href="https://github.com/LedicaCo/" onClick={handleOpenExternalPage}><i className='bx bxl-github'></i></a></li>
+              <li><a className="linkedin" href="https://www.linkedin.com/in/leonardo-diaz-castrillon-a226351a8" onClick={handleOpenExternalPage}><i className='bx bxl-linkedin'></i></a></li>
+              <li><a className="youtube" href="" onClick={handleOpenExternalPage}><i className='bx bxl-youtube'></i></a></li>
+              <li><a className="email" href="" onClick={handleOpenExternalPage}><i className='bx bx-envelope'></i></a></li>
+              <li><a className="whtsapp" href="" onClick={handleOpenExternalPage}><i className='bx bxl-whatsapp'></i></a></li>
             </ul>
           </div>
         </div>

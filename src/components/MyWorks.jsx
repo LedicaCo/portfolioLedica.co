@@ -36,7 +36,7 @@ const MyWorks = () => {
               <li className="mywork__option">
                 <a
                   className="mywork__option-item"
-                  href="https://ledicaco.github.io/UsersCRUD/"
+                  href="https://ledicaco.github.io/portfolioLedica.co/"
                 >
                   Demo
                 </a>
@@ -44,7 +44,7 @@ const MyWorks = () => {
               <li className="mywork__option">
                 <a
                   className="mywork__option-item"
-                  href="https://github.com/LedicaCo/UsersCRUD"
+                  href="https://github.com/LedicaCo/portfolioLedica.co"
                 >
                   Code
                 </a>
@@ -69,7 +69,7 @@ const MyWorks = () => {
               <li className="mywork__option">
                 <a
                   className="mywork__option-item"
-                  href="https://ledicaco.github.io/UsersCRUD/"
+                  href="https://ledicaco.github.io/PokedexApp/"
                 >
                   Demo
                 </a>
@@ -77,7 +77,7 @@ const MyWorks = () => {
               <li className="mywork__option">
                 <a
                   className="mywork__option-item"
-                  href="https://github.com/LedicaCo/UsersCRUD"
+                  href="https://github.com/LedicaCo/PokedexApp"
                 >
                   Code
                 </a>
@@ -135,7 +135,7 @@ const MyWorks = () => {
               <li className="mywork__option">
                 <a
                   className="mywork__option-item"
-                  href="https://ledicaco.github.io/UsersCRUD/"
+                  href="https://ledicaco.github.io/RickAndMortyApp/"
                 >
                   Demo
                 </a>
@@ -143,7 +143,7 @@ const MyWorks = () => {
               <li className="mywork__option">
                 <a
                   className="mywork__option-item"
-                  href="https://github.com/LedicaCo/UsersCRUD"
+                  href="https://github.com/LedicaCo/RickAndMortyApp"
                 >
                   Code
                 </a>
@@ -168,7 +168,7 @@ const MyWorks = () => {
               <li className="mywork__option">
                 <a
                   className="mywork__option-item"
-                  href="https://ledicaco.github.io/UsersCRUD/"
+                  href="https://nexocreative-mde.github.io/WeatherApp/"
                 >
                   Demo
                 </a>
@@ -176,7 +176,7 @@ const MyWorks = () => {
               <li className="mywork__option">
                 <a
                   className="mywork__option-item"
-                  href="https://github.com/LedicaCo/UsersCRUD"
+                  href="https://github.com/NexoCreative-MDE/WeatherApp"
                 >
                   Code
                 </a>
@@ -201,7 +201,7 @@ const MyWorks = () => {
               <li className="mywork__option">
                 <a
                   className="mywork__option-item"
-                  href="https://ledicaco.github.io/UsersCRUD/"
+                  href="https://nexocreative-mde.github.io/fortuneCookies/"
                 >
                   Demo
                 </a>
@@ -209,7 +209,7 @@ const MyWorks = () => {
               <li className="mywork__option">
                 <a
                   className="mywork__option-item"
-                  href="https://github.com/LedicaCo/UsersCRUD"
+                  href="https://github.com/NexoCreative-MDE/fortuneCookies.git"
                 >
                   Code
                 </a>

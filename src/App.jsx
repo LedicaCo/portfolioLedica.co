@@ -18,6 +18,7 @@ import Footer from './components/Footer'
 
 
 
+
 function App() {
   const [navbarVisible, setNavbarVisible] = useState(false);
 
@@ -25,6 +26,7 @@ function App() {
     setNavbarVisible(!navbarVisible);
     e.preventDefault();
   };
+  
 
   return (
     <div className='main__container'>
