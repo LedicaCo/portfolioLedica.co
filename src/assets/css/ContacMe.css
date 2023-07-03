@@ -153,6 +153,28 @@
     transition: all .3s ease-in-out;
 }
 
+.msg__success {
+    width: 100%;
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    border-radius: 0.5em;
+    margin-top: 20px;
+}
+
+.bx-check-circle {
+    font-size: 3em;
+    color: ghostwhite;
+    padding: 20px 0;
+}
+
+.success-message {
+    padding-bottom: 20px;
+    font-size: 1.5em;
+}
+
 
 
 

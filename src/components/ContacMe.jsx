@@ -1,26 +1,44 @@
-import { useRef } from 'react';
-import emailjs from '@emailjs/browser';
-
-
+import { useRef, useState, useEffect } from "react";
+import emailjs from "@emailjs/browser";
 
 const ContacMe = () => {
-  
   const form = useRef();
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_v3atwb3', 'template_ngy7evm', form.current, 'k6hYwhsTXaf8n0g14')
+    emailjs
+      .sendForm(
+        "service_v3atwb3",
+        "template_ngy7evm",
+        form.current,
+        "k6hYwhsTXaf8n0g14"
+      )
       .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
+        console.log(result.text);
+        setIsSubmitted(true);
+        form.current.reset();
+      })
+      .catch((error) => {
+        console.log(error.text);
       });
   };
-  
+
+  useEffect(() => {
+    let timer;
+    if (isSubmitted) {
+      timer = setTimeout(() => {
+        setIsSubmitted(false);
+      }, 10000);
+    }
+
+    return () => clearTimeout(timer);
+  }, [isSubmitted]);
+
   const handleOpenExternalPage = (event) => {
     event.preventDefault();
-    window.open(event.target.href, '_blank');
+    window.open(event.target.href, "_blank");
   };
   return (
     <div className="contactMe box7" id="ContacMe">
@@ -95,12 +113,20 @@ const ContacMe = () => {
           <div className="btn__content form__btn">
             <ul>
               <li>
-                <a className="github" href="https://github.com/LedicaCo/" onClick={handleOpenExternalPage}>
+                <a
+                  className="github"
+                  href="https://github.com/LedicaCo/"
+                  onClick={handleOpenExternalPage}
+                >
                   <i className="bx bxl-github"></i>
                 </a>
               </li>
               <li>
-                <a className="linkedin" href="https://www.linkedin.com/in/leonardo-diaz-castrillon-a226351a8" onClick={handleOpenExternalPage}>
+                <a
+                  className="linkedin"
+                  href="https://www.linkedin.com/in/leonardo-diaz-castrillon-a226351a8"
+                  onClick={handleOpenExternalPage}
+                >
                   <i className="bx bxl-linkedin"></i>
                 </a>
               </li>
@@ -115,7 +141,11 @@ const ContacMe = () => {
                 </a>
               </li>
               <li>
-                <a className="whatsapp" href="https://api.whatsapp.com/send/?phone=573218947069&text&type=phone_number&app_absent=0" onClick={handleOpenExternalPage}>
+                <a
+                  className="whatsapp"
+                  href="https://api.whatsapp.com/send/?phone=573218947069&text&type=phone_number&app_absent=0"
+                  onClick={handleOpenExternalPage}
+                >
                   <i className="bx bxl-whatsapp"></i>
                 </a>
               </li>
@@ -124,15 +154,18 @@ const ContacMe = () => {
         </div>
         <div className="form__container">
           <form className="form" ref={form} onSubmit={sendEmail}>
-          <h2 className="form__title">Contact form</h2>
+            <h2 className="form__title">Contact form</h2>
             <div className="form__section">
               <label className="form__label" htmlFor="">
-              Company
+                Company
               </label>
-              <input 
+              <input
                 className="form__input"
                 id=""
-                type="text" name="company" required placeholder="Write the name of your company"               
+                type="text"
+                name="company"
+                required
+                placeholder="Write the name of your company"
               />
             </div>
             <div className="form__section">
@@ -142,7 +175,10 @@ const ContacMe = () => {
               <input
                 className="form__input"
                 id=""
-                type="text" name="user_name" required placeholder="Write your first and last name"
+                type="text"
+                name="user_name"
+                required
+                placeholder="Write your first and last name"
               />
             </div>
             <div className="form__section">
@@ -152,7 +188,10 @@ const ContacMe = () => {
               <input
                 className="form__input"
                 id=""
-                type="email" name="email" required placeholder="Write your email"
+                type="email"
+                name="email"
+                required
+                placeholder="Write your email"
               />
             </div>
             <div className="form__section">
@@ -162,17 +201,37 @@ const ContacMe = () => {
               <input
                 className="form__input"
                 id=""
-                type="phone" name="user_phone" required placeholder="Write your contact number or mobile"
+                type="phone"
+                name="user_phone"
+                required
+                placeholder="Write your contact number or mobile"
               />
             </div>
             <div className="form__section">
               <label className="form__label" htmlFor="">
-              Message
+                Message
               </label>
-              <textarea className="form__text-area" name="message" id="" cols="30" rows="8" placeholder="Write your message"></textarea>
+              <textarea
+                className="form__text-area"
+                name="message"
+                id=""
+                cols="30"
+                rows="8"
+                placeholder="Write your message"
+              ></textarea>
             </div>
-            <button className="btn__submit" type="submit" value="send"><span>Send message</span></button>
+            <button className="btn__submit" type="submit" value="send">
+              <span>Send message</span>
+            </button>
           </form>
+          {isSubmitted && (
+            <div className="msg__success">
+            <i className='bx bx-check-circle'></i>
+              <p className="success-message">
+                ¡Tu mensaje se envió correctamente!
+              </p>
+            </div>
+          )}
         </div>
       </div>
     </div>
