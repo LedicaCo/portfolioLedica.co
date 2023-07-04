@@ -34,8 +34,66 @@
     border-radius: 0.5em;
 }
 
+.image__content-4 {
+position: relative;
+}
+
+.image__content-4::before {
+    content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00000099;
+  background-size: cover;
+  backdrop-filter: blur(2px);
+  z-index: 1;
+}
+
+.image__content-5 {
+    position: relative;
+    }
+    
+    .image__content-5::before {
+        content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #00000099;
+      background-size: cover;
+      backdrop-filter: blur(2px);
+      z-index: 1;
+    }
+    
+    .image__content-6 {
+        position: relative;
+        }
+        
+        .image__content-6::before {
+            content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: #00000099;
+          background-size: cover;
+          backdrop-filter: blur(2px);
+          z-index: 1;
+        }
+
 .certificate__image {
-    width: 100%;        
+    width: 100%; 
+    z-index: -1;       
+}
+
+.certificate__image-4 {
+    width: 100%;
+    background-color: #00000095;
+    z-index: 2;        
 }
 
 .divider {
