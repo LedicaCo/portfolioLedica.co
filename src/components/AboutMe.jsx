@@ -6,7 +6,7 @@ const AboutMe =
         <div className="about__header ">
           <span className="about__title ">
             <b>ABOUT ME/</b>
-            <a className="link__about--title" href="#home">
+            <a className="link__about--title" href="#">
               HOME
             </a>
           </span>

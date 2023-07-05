@@ -80,6 +80,15 @@
     .then__paragraf {
         font-size: 0.9em;
     }
+    
+    .whatsapp__me {
+        color: #4dc247;
+        text-decoration: none;
+    }
+    
+    .whatsapp__me:hover {
+        color: lightgreen;
+    }
 
 }
 
@@ -166,7 +175,7 @@
 
 .bx-check-circle {
     font-size: 3em;
-    color: ghostwhite;
+    color: ghostwhite; 
     padding: 20px 0;
 }
 

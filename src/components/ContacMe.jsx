@@ -83,9 +83,8 @@ const ContacMe = () => {
               <span className="then__email">
                 The best and the most confotable way to talk to me is to send me
                 and email to
-                <a className="link__email" href="mailto:webdesign@ledica.co">
-                  {" "}
-                  webdesign@ledica.co
+                <a className="link__email" href="mailto:webdesign@ledica.co">&nbsp;
+                   webdesign@ledica.co
                 </a>
               </span>
               <br />
@@ -104,8 +103,8 @@ const ContacMe = () => {
               <h2 className="more__contac">And:</h2>
             </div>
             <div className="column-2">
-              <span>
-                By the way i use <a href="https://api.whatsapp.com/send/?phone=573218947069&text&type=phone_number&app_absent=0">Whatsapp</a> and have profiles at
+              <span >
+                By the way i use <a className="whatsapp__me" href="https://api.whatsapp.com/send/?phone=573218947069&text&type=phone_number&app_absent=0">Whatsapp</a> and have profiles at
                 social networks like
               </span>
             </div>
