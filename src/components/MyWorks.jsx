@@ -149,7 +149,7 @@ const MyWorks = () => {
             <h2 className="work__title"> Weather App</h2>
             <div className="work__description">
               <p className="mywork__details">
-              Project developed with HTML, CSS React.Js and Javascript, it is an application that gives us real-time information about the weather in the place where you are, called "Weather App", you can also check the weather status of any city in the world. world.
+              Project developed with HTML, CSS React.Js and Javascript, it is an application that gives us real-time information about the weather in the place where you are, called "Weather App", you can also check the weather status of any city in the world.
               </p>
             </div>
             <hr className="divider" />

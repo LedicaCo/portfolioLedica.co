@@ -1,4 +1,9 @@
 const Certificates = () => {
+  
+  const handleOpenExternalPage = (event) => {
+    event.preventDefault();
+    window.open(event.target.href, '_blank');
+  };
   return (
     <div className="box5" id="Certificates">
       <h2 className="certificates__title">Training certificates</h2>
@@ -9,7 +14,7 @@ const Certificates = () => {
           </div>
           <hr className="divider" />
           <div className="verify__content">
-            <a className="verify__cert" href="https://certificates.academlo.com/en/verify/05140555944827">
+            <a className="verify__cert" href="https://certificates.academlo.com/en/verify/05140555944827" onClick={handleOpenExternalPage}>
               Verify Certificate
             </a>
           </div>
@@ -22,7 +27,7 @@ const Certificates = () => {
           <div className="verify__content">
             <a
               className="verify__cert"
-              href="https://www.udemy.com/certificate/UC-1819f7df-39de-4a7f-a443-fb37ff49f3a8/"
+              href="https://www.udemy.com/certificate/UC-1819f7df-39de-4a7f-a443-fb37ff49f3a8/" onClick={handleOpenExternalPage}
             >
               Verify Certificate
             </a>
@@ -34,7 +39,7 @@ const Certificates = () => {
           </div>
           <hr className="divider" />
           <div className="verify__content">
-            <a className="verify__cert" href="https://certificates.academlo.com/en/verify/52061699609655">
+            <a className="verify__cert" href="https://certificates.academlo.com/en/verify/52061699609655" onClick={handleOpenExternalPage}>
               Verify Certificate
             </a>
           </div>
@@ -45,7 +50,7 @@ const Certificates = () => {
           </div>
           <hr className="divider" />
           <div className="verify__content">
-            <a className="verify__cert" href="#" id="link">
+            <a className="verify__cert" href="#" onClick={handleOpenExternalPage}>
               Verify Certificate
             </a>
           </div>
@@ -56,7 +61,7 @@ const Certificates = () => {
           </div>
           <hr className="divider" />
           <div className="verify__content">
-            <a className="verify__cert" href="#" id="link">
+            <a className="verify__cert" href="#" onClick={handleOpenExternalPage}>
               Verify Certificate
             </a>
           </div>
@@ -67,7 +72,7 @@ const Certificates = () => {
           </div>
           <hr className="divider" />
           <div className="verify__content">
-            <a className="verify__cert" href="#" id="link">
+            <a className="verify__cert" href="#" onClick={handleOpenExternalPage}>
               Verify Certificate
             </a>
           </div>
